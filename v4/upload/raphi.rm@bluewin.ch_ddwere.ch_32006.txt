@@ -1,0 +1,2 @@
+Password: dwf\n Prio:4\n Type: Fish-Bug\n Callback: on
+            \n Reproduzierbar: on\n Date:23.1.2012\n
