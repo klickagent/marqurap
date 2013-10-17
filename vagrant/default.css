@@ -1,0 +1,61 @@
+h1 {
+	font-family: FreeSans, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: #DD9900;
+	line-height: 1.3em;
+	padding-bottom: 9px;
+	border-top: dotted 2px #DD9900;
+	border-left: dotted 2px #DD9900;
+	border-right: dotted 2px #DD9900;
+	border-bottom: dotted 2px #DD9900;
+}
+
+header {
+	background-color: dodgerblue;
+	margin: 4%;
+	border: solid 10px aqua;
+	padding: 10px;
+}
+
+#articles {
+	width: 60%;
+	float: right;
+	margin-right: 5%;
+}
+
+article {
+        
+	background-color: firebrick;
+	padding: 10px;
+        margin-left: 14em;
+        margin-bottom: 2em;
+	border-top-left-radius: 3em;
+	border-bottom-right-radius: 3em;
+	border-top-right-radius: 3em;
+	border-bottom-left-radius: 3em;
+	-moz-border-top-left-radius: 3em;
+	-moz-border-bottom-right-radius: 5em 3em;
+	-moz-border-top-right-radius: 3em;
+	-moz-border-bottom-left-radius: 3em;
+	-webkit-border-top-left-radius: 1em;
+	-webkit-border-bottom-right-radius: 3em;
+	-webkit-border-top-right-radius: 3em;
+	-webkit-border-bottom-left-radius: 1em;
+}
+
+nav {
+	background-color: bisque;
+	padding: 5px;
+	margin-bottom: 2em;
+        float: left;
+        width: 13em;
+        
+}
+
+footer {
+	background-color: aqua;
+	margin: 4%;
+	border: solid 20px aliceblue;
+	padding: 20px;
+}
