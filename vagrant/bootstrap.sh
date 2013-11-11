@@ -23,7 +23,7 @@ sudo sed -i '/display_errors = Off/c display_errors = On' /etc/php5/apache2/php.
 
 rm -rf /var/www
 ln -fs /vagrant /var/www
-
+sudo cp -f /vagrant/data/default /etc/apache2/sites-available/default 
 # from www.thisprogrammingthing.com/2013/getting-started-with-vagrant/
 if [ ! -f /var/log/databasesetup ];
 then
