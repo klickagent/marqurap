@@ -20,8 +20,8 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=trackstar',
 			'emulatePrepare' => true,
-			'username' => 'user',
-			'password' => 'vagrant',
+			'username' => 'root',
+			'password' => 'rootpass',
 			'charset' => 'utf8',
 		),
 		
