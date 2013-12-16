@@ -1,1 +1,5 @@
-SS in vagrant/sxx/
+Please find the newest selfstudy in /vagrant/current
+
+I will note all changes with commits as we use now everytime the same framework with trackstar etc...
+
+For special excercises you will also find it in /vagrant/current...
