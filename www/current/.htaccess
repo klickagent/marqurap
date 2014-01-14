@@ -1,0 +1,7 @@
+# Redirect everything in this directory to "good.html"   
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite everything else through the pages parameter 
+RewriteRule ^(.+)$ index.php?rt=$1 [L] 

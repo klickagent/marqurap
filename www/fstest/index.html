@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit us your Bug!</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<script type="text/javascript">
+		  // ref: http://diveintohtml5.org/detect.html
+	  function supports_input_placeholder()
+	  {
+	    var i = document.createElement('input');
+	    return 'placeholder' in i;
+	  }
+
+	  if(!supports_input_placeholder()) {
+	    var fields = document.getElementsByTagName('INPUT');
+	    for(var i=0; i < fields.length; i++) {
+	      if(fields[i].hasAttribute('placeholder')) {
+	        fields[i].defaultValue = fields[i].getAttribute('placeholder');
+	        fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
+	        fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
+	      }
+	    }
+	  }
+</script>
+</head>
+<body>
+
+	<h2>Bitte melde deinen Bug mit diesem Formular</h2>
+	
+	<form class="form" enctype="multipart/form-data" action="filebug.php" method="POST">
+		
+		<p class="name">
+			<input type="text" name="name" id="name" placeholder="John Doe" required/>
+			<label for="name">Name</label>
+		</p>
+		
+		<p class="email">
+			<input type="text" name="email" id="email" placeholder="mail@example.com" required/>
+			<label for="email">Email</label>
+		</p>
+
+		<p class="password">
+			<input type="password" name="password" id="password" placeholder="***********" required/>
+			<label for="password">Passwort</label>
+		</p>
+		
+		<p class="web">
+			<input type="text" name="web" id="web" placeholder="www.example.com" required/>
+			<label for="web">Betreffende Website</label>
+		</p>
+
+		<p>
+			<input type="file" name="userfile" required/>
+			<label for="screenshot">Screenshot</label>
+		</p>
+
+		<p class="prio">
+			<input type="range" name="prio" id="prio" min="1" max="5" required/>
+			<label for="web">Priorität</label>
+		</p>
+
+		<p class="date">
+			<input type="date" name="date" id="date" required/>
+			<label for="web">Datum</label>
+		</p>
+
+		<p id=bugList>
+			<label for="bugList">Bug Typ</label>
+			<fieldset>
+				<p class="bugList">
+	          	
+	            <select id="bugList">
+	               <option value = "1">Blöd</option>
+	               <option value = "2">Noch blöder</option>
+	               <option value = "3">Am blödsten</option>
+	            </select>
+	            </p> 	
+       		</fieldset>	
+       		
+		</p>
+
+		<p class="callback">
+			<input type="checkbox" name="callback" id="callback" />
+			<label for="web">Rückruf erforderlich?</label>
+		</p>
+
+        <p class="repro">
+	        <label for = "repro">Reproduzierbar: </label>
+	    	<input type = "radio"
+	             name = "repro"
+	             id = "reproJa"
+	             value = "reproJa"
+	             checked = "checked"
+	        />
+	        <label for = "reproJa">Ja</label>
+	        <input type = "radio"
+	             name = "repro"
+	             id = "reproNein"
+	             value = "reproNein"
+	        />
+	    	<label for = "reproNein">Nein</label>
+		    
+    	</p>
+    	
+
+		<p class="text">
+			<textarea name="text" placeholder="Fehlerreport" /></textarea>
+		</p>
+
+		<p class="submit">
+			<input type="submit" value="Senden" />
+		</p>
+	</form>
+
+</body>
+</html>

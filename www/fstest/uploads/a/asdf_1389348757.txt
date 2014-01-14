@@ -1,0 +1,7 @@
+name: asdf
+email: asdf
+web: www.gg.gg
+prio: 4
+date: 2010-01-01
+repro: reproJa
+report: dd
