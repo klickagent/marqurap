@@ -1,5 +1,10 @@
-Please find the newest selfstudy in /vagrant/current
+www directory mounted to /var/www with group www-data
 
-I will note all changes with commits as we use now everytime the same framework with trackstar etc...
+it is a splitted mount from root directory
 
-For special excercises you will also find it in /vagrant/current...
+Wordpress DB and Testdrive DB for YII is autoprovisioned. YII uses a bootstrap theme.
+
+
+
+To modify any configurations: bootstrap.sh and Vagrantfile are the way to go. It uses some data in the data/ folder (mainly for DB Provisioning.
+
