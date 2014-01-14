@@ -272,3 +272,35 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/current/gii
 ---
+2014/01/14 08:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testtable/view".' in /www/current/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testtable/view')
+#1 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /www/current/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/current/testtable/view
+---
+2014/01/14 08:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testtable/accessRules".' in /www/current/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testtable/acces...')
+#1 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /www/current/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/current/testtable/accessRules
+---
+2014/01/14 08:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testtable/view".' in /www/current/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testtable/view')
+#1 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /www/current/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/current/testtable/view
+---
+2014/01/14 08:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testtable/index".' in /www/current/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testtable/index')
+#1 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /www/current/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/current/testtable/index
+---
