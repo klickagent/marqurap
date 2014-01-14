@@ -304,3 +304,50 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/current/testtable/index
 ---
+2014/01/14 08:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /www/current/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /www/current/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /www/current/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /www/current/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /www/current/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /www/current/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /www/current/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /www/current/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/current/site/page?view=about
+HTTP_REFERER=http://localhost:8080/current/site/contact
+---
+2014/01/14 08:47:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /www/current/yii/framework/web/CController.php:336
+Stack trace:
+#0 /www/current/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/current/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/current/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/current/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/current/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/current/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/current/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/current/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/current/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testtable/view')
+#10 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /www/current/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/current/testtable/view
+---
+2014/01/14 08:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /www/current/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /www/current/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /www/current/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /www/current/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /www/current/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /www/current/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /www/current/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /www/current/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /www/current/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /www/current/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/current/site/page?view=about
+HTTP_REFERER=http://localhost:8080/current/
+---
